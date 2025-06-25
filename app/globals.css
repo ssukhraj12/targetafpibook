@@ -1,26 +1,137 @@
-@import "tailwindcss";
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bred: #780000;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.cred{color: var(--bred)}
+.bgred{background-color: var(--bred)}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -.05em;
+  -webkit-font-smoothing: antialiased;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 0.95rem;
 }
 
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+#ftop + section {
+  margin-top: 134.75px;
+}
+@media (max-width: 798px) {
+  #ftop + section {
+    margin-top: 127.3px;
+  }
+}
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: unset;
+  outline: 0;
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+  color: var(--bred);
+}
+.menucall {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  border-radius: 100%;
+  color: #FFF;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  width: 2.7em;
+  height: 2.7em;
+}
+#call-section{
+  background-image: url("https://glimageurl.golocall.com/gl-banner/222219_banner_maibhagoafpi_self_1744170831.png");
+  height: 576px;
+}
+@media (max-width: 768px) {
+  .fs-5.mb-5.text-muted {
+    font-size: 16px !important;
+  }
+}
+.custom-svg-fill-color-tertiary-darken {
+  fill: var(--bred) !important;
+}
+.shape-divider.shape-divider-top {
+  background-image: url('/topdivider.svg');
+  width: 100%;
+  height: 102px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  top: 0;
+}
+.shape-divider.shape-divider-top + div {
+  padding-top: 5rem !important;
+}
+.shape-divider.shape-divider-bottom {
+  background-image: url('/bottomdivider.svg');
+  width: 100%;
+  height: 102px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0;
+}
+.shape-divider.spacer {
+  background-image: url('/spacer1.svg');
+  width: 100%;
+  height: 576px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-form-style-1 .form-control {
+  height: calc(1.8em + 1.85rem + 2px);
+  padding: 0.975rem 1.25rem;
+  background: #f7f7f7;
+  border-color: #f7f7f7;
+  line-height: 1.5 !important;
+  font-size: 0.85rem;
+}
+.bshadow1 {
+  box-shadow: 0 60px 120px -60px #BBB;
+}
+#footer {
+  background: var(--bred);
+  h4 {
+    color: var(--bs-light);
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 12.6px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--bs-light);
+    font-size: 12.6px
+  }
+  li {
+    margin-bottom: 16px;
+  }
 }
