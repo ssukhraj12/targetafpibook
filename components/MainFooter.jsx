@@ -5,7 +5,7 @@ export default function MainFooter() {
         <>
             <section id={'footer'} className={'pt-4 pb-3'}>
                 <div className="container">
-                    <div className="row py-5">
+                    <div className="row py-3">
                         <div className="col-md-4 col-lg-3 mb-4 mb-lg-0">
                             <h4 className={'fw-bold'}>Target Afpi Book</h4>
                             <p className={'mb-1 text-light'}>
@@ -17,7 +17,7 @@ export default function MainFooter() {
                             <p className={'mb-1 text-light'}>Mohali, 160055</p>
                             <p className={'mb-1 text-light'}>Punjab, IN</p>
                         </div>
-                        <div className="col-md-4 col-lg-3 mb-4 mb-lg-0">
+                        <div className="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
                             <h4 className={'fw-bold'}>Our Contacts</h4>
                             <ul className={'list-unstyled'}>
                                 <li className={'d-flex'}>
@@ -45,7 +45,7 @@ export default function MainFooter() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-md-4 col-lg-2 mb-4 mb-md-0">
+                        <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
                             <h4 className={'fw-bold'}>Links</h4>
                             <ul className={'list-unstyled'}>
                                 <li><a href="#">Blog</a></li>
@@ -55,14 +55,14 @@ export default function MainFooter() {
                                 <li><a href="#">Terms & Conditions</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-4 col-lg-2 mb-4 mb-md-0">
+                        <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
                             <h4 className={'fw-bold'}>About</h4>
                             <ul className={'list-unstyled'}>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-4 col-lg-2">
+                        <div className="col-6 col-md-4 col-lg-2">
                             <h4 className={'fw-bold'}>Follow Us</h4>
                             <ul className={'list-unstyled'}>
                                 <li>

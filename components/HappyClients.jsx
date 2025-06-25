@@ -2,7 +2,7 @@
 export default function HappyClients() {
     return (
         <>
-            <section id='happy-clients' className={'bgred position-relative py-5'}>
+            <section id='happy-clients' className={'bgred position-relative py-3'}>
                 <div className="shape-divider shape-divider-top"></div>
                 <div className="container py-5">
                     <div className="row">

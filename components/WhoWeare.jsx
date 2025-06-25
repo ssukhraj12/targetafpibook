@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function WhoWeare() {
     return (
         <>
-            <section id={'whoweare'} className={'py-5 position-relative'}>
-                <div className="container py-5">
+            <section id={'whoweare'} className={'py-3 position-relative'}>
+                <div className="container py-3">
                     <div className="row align-items-center g-5">
                         <div className="col-lg-5">
                             <h2 className={'h6 cred fw-semibold'}>

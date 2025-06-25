@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function BestCoaching() {
     return (
         <>
-            <section id={'whoweare'} className={'py-5'}>
+            <section id={'bestcoaching'} className={'py-3'}>
                 <div className="container">
                     <div className="row align-items-center g-5">
                         <div className="col-lg-6 offset-lg-1 order-0 order-lg-1">

@@ -10,7 +10,7 @@ export default function CallSection() {
     return (
         <>
             <section className={'position-relative'}>
-                <section id='call-section' className={'py-5 position-relative'}>
+                <section id='call-section' className={'pt-5 pb-3 position-relative'}>
                     <div className="container">
                         <div className="row justify-content-center justify-content-lg-start pb-5 mb-5">
                             <div className="col-md-10 col-lg-6 text-center text-lg-end pe-lg-4 pb-5 mb-5">
@@ -77,9 +77,7 @@ export default function CallSection() {
                         ))}
                     </div>
                 </section>
-
             </section>
-
         </>
     )
 }

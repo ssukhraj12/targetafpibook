@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function LearnPrepare() {
     return (
         <>
-            <section id={'learnprepare'} className={'py-5 bg-light'}>
+            <section id={'learnprepare'} className={'pb-3 bg-light'}>
                 <div className="container">
                     <div className="row align-items-center g-5">
                         <div className="col-lg-5">

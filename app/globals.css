@@ -93,6 +93,14 @@ body {
   position: absolute;
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .shape-divider.shape-divider-bottom {
+    height: 52px;
+  }
+  .shape-divider.shape-divider-top {
+    height: 52px;
+  }
+}
 .shape-divider.spacer {
   background-image: url('/spacer1.svg');
   width: 100%;
