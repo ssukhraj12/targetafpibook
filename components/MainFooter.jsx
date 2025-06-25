@@ -43,6 +43,9 @@ export default function MainFooter() {
                                         </a>
                                     </div>
                                 </li>
+                                <li>
+                                    <button href="#" className={'btn btn-outline-light fw-bold'}>Contact us</button>
+                                </li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
@@ -60,6 +63,8 @@ export default function MainFooter() {
                             <ul className={'list-unstyled'}>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Our Courses</a></li>
+                                <li><a href="#">Buy Book</a></li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2">
