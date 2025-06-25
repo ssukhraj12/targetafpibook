@@ -19,7 +19,11 @@ export default function MainHeader() {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <marquee>Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam</marquee>
+                                <div className="marquee-wrapper">
+                                    <div className="marquee-content">
+                                        <a href="#" className={'btn btn-outline-dark btn-sm'}>Order Now!</a> Target Afpi Book for Maharaja Ranjit Singh Academy AFPI Mohali Entrance Exam Preparation
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
