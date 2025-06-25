@@ -18,7 +18,7 @@ export default function WhoWeare() {
                             <a href="#" className={'fw-bold text-decoration-none rounded-1 text-uppercase bgred text-white px-5 py-3'}>Read More</a>
                         </div>
                         <div className="col-lg-6 offset-lg-1">
-                            <Image src={'/images/targetafpi_book_1.png'} alt={'Target AFPI Book'} width={707} height={1000}
+                            <Image src={'/images/targetafpi_book_1.png'} quality={70} alt={'Target AFPI Book'} width={707} height={1000}
                                    className="img-fluid" />
                         </div>
                     </div>

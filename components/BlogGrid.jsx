@@ -28,7 +28,7 @@ export default function BlogGrid() {
                         {hblogs.map((blog, index) => (
                             <div key={index} className={'col-lg-4'}>
                                 <div className="card shadow-lg" title={blog.title}>
-                                    <Image src={blog.blog_image} alt={blog.title} height={'280'} width={'420'}
+                                    <Image src={blog.blog_image} alt={blog.title} height={'280'} width={'420'} quality={70}
                                            className={'card-img-top'} style={{width:'100%',aspectRatio:'42/28',objectFit:'fill',height:'auto'}} />
                                     <div className={'card-body'}>
                                         <div className={'small mb-2 text-muted'}>

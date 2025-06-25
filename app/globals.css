@@ -59,7 +59,8 @@ body {
   height: 2.7em;
 }
 #call-section{
-  background-image: url("https://glimageurl.golocall.com/gl-banner/222219_banner_maibhagoafpi_self_1744170831.png");
+  /*background-image: url("https://glimageurl.golocall.com/gl-banner/222219_banner_maibhagoafpi_self_1744170831.png");*/
+  background-color: var(--bred);
   height: 576px;
 }
 @media (max-width: 768px) {

@@ -32,9 +32,9 @@ export default function MainHeader() {
                     <div className="container">
                         <Link href={'/'} className={'navbar-brand me-0'}>
                             <Image src={'/logo.png'} alt={'logo'} width={100} height={70.8} sizes={'100vw'}
-                                   className={'img-fluid d-lg-none'} />
+                                   className={'img-fluid d-lg-none'} priority={true} />
                             <Image src={'/logo.png'} alt={'logo'} width={132} height={94} sizes={'100vw'}
-                                   className={'img-fluid d-none d-lg-block'} />
+                                   className={'img-fluid d-none d-lg-block'} priority={true} />
                         </Link>
                         <button className="navbar-toggler order-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#mainMenu" aria-controls="mainMenu"
