@@ -2,9 +2,9 @@ import {Icon} from "@iconify/react";
 
 export default function CallSection() {
     const facts = [
-        {id:1,title:'Latest Edition',icon:'rivet-icons:check-circle-breakout'},
-        {id:2,title:'Short Cut Concepts',icon:'rivet-icons:check-circle-breakout'},
-        {id:3,title:'1400+ MCQs',icon:'rivet-icons:check-circle-breakout'},
+        {id:1,title:'Latest Edition',icon:'streamline-ultimate-color:book-open-bookmark'},
+        {id:2,title:'Short Cut Concepts',icon:'ic:twotone-switch-access-shortcut-add'},
+        {id:3,title:'1400+ MCQs',icon:'line-md:check-list-3'},
         {id:4,title:'Informative Material',icon:'rivet-icons:check-circle-breakout'},
     ]
     return (
@@ -21,7 +21,7 @@ export default function CallSection() {
                         </div>
                     </div>
                 </section>
-                <section className="container position-relative z-1" style={{marginTop:"-388px"}}>
+                <section className="container position-relative z-1" style={{marginTop:"-395px"}}>
                     <div className="row align-items-end pb-4 mb-4 mb-lg-5">
                         <div className={'col-lg-6 pe-lg-4 mb-5 mb-lg-0'}>
                             <div className="card bshadow1 border-0 rounded-3">
@@ -50,7 +50,7 @@ export default function CallSection() {
                         <div className={'col-lg-6 pb-lg-5'}>
                             <ul className="list list-unstyled mb-0">
                                 <li className="mb-4 mb-lg-2">
-                                    <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-lg-row fw-medium fs-5">
+                                    <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-xl-row fw-medium fs-5">
                                         <span className={'opacity-50'}> SCHEDULE AN APPOINTMENT:</span>
                                         <strong className="fs-3 mt-lg-0 ms-lg-3">
                                             <a href="tel:+919041536379" className="cred text-decoration-none">904-153-6379</a>
@@ -58,7 +58,7 @@ export default function CallSection() {
                                     </span>
                                 </li>
                                 <li className="mb-0">
-                                    <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-lg-row fw-medium fs-5">
+                                    <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-xl-row fw-medium fs-5">
                                        <span className={'opacity-50'}>SEND AN EMAIL:</span>
                                         <strong className="mt-lg-0 ms-lg-3">
                                             <a href="mailto:targetafpibook@gmail.com" className="cred">targetafpibook@gmail.com</a>
