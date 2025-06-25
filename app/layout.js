@@ -3,6 +3,7 @@ import "./globals.css";
 import MainHeader from "@/components/MainHeader";
 import Script from "next/script";
 import MainFooter from "@/components/MainFooter";
+import {mediaUrl} from "@/lib/config";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -39,13 +40,25 @@ export const metadata = {
         canonical:'/',
     },
     openGraph:{
-        title: "Target AFPI Book",
+        title: "Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam",
         type: "website",
         url: "https://targetafpibook.com",
         siteName: "Target AFPI Book",
+        images: [
+            {
+                url: `${mediaUrl}targetafpi_book_1.png`,
+                secureUrl: `${mediaUrl}targetafpi_book_1.png`,
+                alt: "Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam",
+                width: 1200,
+                height: 630,
+            },
+        ],
     },
     twitter:{
-        title: "Target AFPI Book",
+        card: "summary_large_image",
+        title: "Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam",
+        description: "Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam",
+        images: [`${mediaUrl}targetafpi_book_1.png`],
     }
 };
 
