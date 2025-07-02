@@ -1,4 +1,5 @@
 import {Icon} from "@iconify/react";
+import Link from "next/link";
 
 export default function MainFooter() {
     return (
@@ -20,7 +21,7 @@ export default function MainFooter() {
                         <div className="col-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
                             <h4 className={'fw-bold'}>Our Contacts</h4>
                             <ul className={'list-unstyled'}>
-                                <li className={'d-flex'}>
+                                <li className={'d-flex mb-3'}>
                                     <div className="icon-link rounded-circle d-none d-sm-inline-flex">
                                         <Icon icon={'mdi:phone-outline'} className={'fs-4 text-light fw-bold'}/>
                                     </div>
@@ -31,7 +32,7 @@ export default function MainFooter() {
                                         </a>
                                     </div>
                                 </li>
-                                <li className={'d-flex'}>
+                                <li className={'d-flex mb-3'}>
                                     <div className="icon-link rounded-circle d-none d-sm-inline-flex">
                                         <Icon icon={'mdi:whatsapp'} className={'fs-4 text-light fw-bold'}/>
                                     </div>
@@ -44,58 +45,58 @@ export default function MainFooter() {
                                     </div>
                                 </li>
                                 <li>
-                                    <button href="#" className={'btn btn-outline-light fw-bold'}>Contact us</button>
+                                    <Link href="/contact" className={'btn px-3 btn-outline-dark border-light fw-bold'}>Contact us</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
                             <h4 className={'fw-bold'}>Links</h4>
-                            <ul className={'list-unstyled'}>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                            <ul className={'nav flex-column'}>
+                                <li className={'nav-item'}><Link href="/blog" className={'nav-link'}>Blog</Link></li>
+                                <li className={'nav-item'}><Link href="/gallery" className={'nav-link'}>Gallery</Link></li>
+                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Testimonials</a></li>
+                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Privacy Policy</a></li>
+                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Terms & Conditions</a></li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
                             <h4 className={'fw-bold'}>About</h4>
-                            <ul className={'list-unstyled'}>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Our Courses</a></li>
-                                <li><a href="#">Buy Book</a></li>
+                            <ul className={'nav flex-column'}>
+                                <li className={'nav-item'}><Link href="/about" className={'nav-link'}>About us</Link></li>
+                                <li className={'nav-item'}><Link href="/contact" className={'nav-link'}>Contact Us</Link></li>
+                                <li className={'nav-item'}><Link href="/our-courses" className={'nav-link'}>Our Courses</Link></li>
+                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Buy Book</a></li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2">
                             <h4 className={'fw-bold'}>Follow Us</h4>
-                            <ul className={'list-unstyled'}>
-                                <li>
-                                    <a href="#">
+                            <ul className={'nav flex-column'}>
+                                <li className={'nav-item'}>
+                                    <a href="#" className={'nav-link'}>
                                     <Icon icon={'mdi:facebook'} className={'fs-4 text-light'}/>
                                     Facebook
                                 </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li className={'nav-item'}>
+                                    <a href="#" className={'nav-link'}>
                                         <Icon icon={'mdi:instagram'} className={'fs-4 text-light'}/>
                                         Instagram
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li className={'nav-item'}>
+                                    <a href="#" className={'nav-link'}>
                                         <Icon icon={'mdi:linkedin'} className={'fs-4 text-light'}/>
                                         LinkedIn
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li className={'nav-item'}>
+                                    <a href="#" className={'nav-link'}>
                                         <Icon icon={'mdi:twitter'} className={'fs-4 text-light'}/>
                                         Twitter
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li className={'nav-item'}>
+                                    <a href="#" className={'nav-link'}>
                                         <Icon icon={'mdi:youtube'} className={'fs-4 text-light'}/>
                                         Youtube
                                     </a>
@@ -111,12 +112,18 @@ export default function MainFooter() {
                                 <div className={'text-light small'}>Copyright © 2025 Target AFPI Book</div>
                             </div>
                             <div className="col-lg-6 text-center text-lg-end">
-                                <div className={'text-light small'}>Powered & Designed By: Sukh Raj Singh</div>
+                                <div className={'text-light small'}>Powered & Designed By: <a href="https://www.truewebpro.com/">Truewebpro</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div className={'position-fixed text-center'} style={{bottom:'20px',left:'20px'}}>
+                <a className={'text-success'} href="https://api.whatsapp.com/send/?phone=919041536379&text=Hi%2C+need+more+information+about+%2ATarget+Afpi+Book%2A.+Please+contact+me">
+                    <Icon className={'display-3'} icon={'logos:whatsapp-icon'}/>
+                    <span className={'d-none'}>Whatsapp</span>
+                </a>
+            </div>
         </>
     )
 }

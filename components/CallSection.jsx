@@ -1,4 +1,5 @@
 import {Icon} from "@iconify/react";
+import CallbackForm from "@/components/CallbackForm";
 
 export default function CallSection() {
     const facts = [
@@ -24,30 +25,9 @@ export default function CallSection() {
                 <section className="container position-relative z-1" style={{marginTop:"-395px"}}>
                     <div className="row align-items-end pb-4 mb-4 mb-lg-5">
                         <div className={'col-lg-6 pe-lg-4 mb-5 mb-lg-0'}>
-                            <div className="card bshadow1 border-0 rounded-3">
-                                <div className="card-body p-5">
-                                    <h2 className={'fw-bold cred lh-1 mb-1'}>Request a Callback</h2>
-                                    <p className={'pb-1 mb-4'}>Enter your details in the form and we will call you back.</p>
-                                    <form className={'custom-form-style-1'}>
-                                        <div className="row">
-                                            <div className="col-12 pb-1 mb-4">
-                                                <input type="text" className={'form-control'} placeholder={'Your Name'}/>
-                                            </div>
-                                            <div className="col-12 pb-1 mb-4">
-                                                <input type="number" className={'form-control'} placeholder={'Your Mobile Number'}/>
-                                            </div>
-                                            <div className="col-12 pb-1 mb-4">
-                                                <input type="email" className={'form-control'} placeholder={'Your Email Address'}/>
-                                            </div>
-                                            <div className="col-12">
-                                                <button type="button" className={'bgred px-5 py-2 rounded-1 border-0 text-uppercase fw-bold text-white'}>Call Me Back</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            <CallbackForm/>
                         </div>
-                        <div className={'col-lg-6 pb-lg-5'}>
+                        <div className={'col-lg-6 pb-lg-5'} data-aos={'fade-down'} data-aos-delay={300}>
                             <ul className="list list-unstyled mb-0">
                                 <li className="mb-4 mb-lg-2">
                                     <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-xl-row fw-medium fs-5">
@@ -70,7 +50,8 @@ export default function CallSection() {
                     </div>
                     <div className="row g-4 text-center">
                         {facts.map((fact, index) => (
-                            <div key={index} className={'col-6 col-xl-3 d-flex flex-column flex-xl-row align-items-center justify-content-center'}>
+                            <div key={index} className={'col-6 col-xl-3 d-flex flex-column flex-xl-row align-items-center justify-content-center'}
+                                 data-aos={'fade-down-right'}>
                                 <Icon icon={`${fact.icon}`} className={'fs-1 me-2'}/>
                                 <h3 className={'h6 fw-bold mb-0 ps-1 ms-xl-2 mt-3 mt-xl-0'}>{fact.title}</h3>
                             </div>

@@ -4,6 +4,7 @@ import MainHeader from "@/components/MainHeader";
 import Script from "next/script";
 import MainFooter from "@/components/MainFooter";
 import {mediaUrl} from "@/lib/config";
+import AOSInit from "@/components/AOSInit";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} ${geistMono.variable} antialiased`}>
+      <AOSInit/>
       <MainHeader/>
         {children}
       <MainFooter/>

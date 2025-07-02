@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --bred: #780000;
+  --bdred: #530000;
 }
 .cred{color: var(--bred)}
 .bgred{background-color: var(--bred)}
@@ -29,9 +30,9 @@ body {
 #ftop + section {
   margin-top: 134.75px;
 }
-@media (max-width: 798px) {
+@media (max-width: 991.9px) {
   #ftop + section {
-    margin-top: 127.3px;
+    margin-top: 103.68px;
   }
 }
 .navbar-toggler {
@@ -122,6 +123,9 @@ body {
   line-height: 1.5 !important;
   font-size: 0.85rem;
 }
+.custom-form-style-1 textarea.form-control {
+  height: auto;
+}
 .bshadow1 {
   box-shadow: 0 60px 120px -60px #BBB;
 }
@@ -138,10 +142,11 @@ body {
   a {
     text-decoration: none;
     color: var(--bs-light);
-    font-size: 12.6px
+    font-size: 12.6px;
+    padding-left: 0;
   }
   li {
-    margin-bottom: 16px;
+    /*margin-bottom: 16px;*/
   }
 }
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^6.0.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.7",
     "next": "15.3.4",
     "react": "^19.0.0",

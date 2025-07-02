@@ -9,8 +9,8 @@ export default function MainHeader() {
     const menus = [
         {id:1,name:"Home",link:"/"},
         {id:2,name:"About",link:"/about"},
-        {id:4,name:"Our Courses",link:"/"},
-        {id:5,name:"Gallery",link:"/contact"},
+        {id:4,name:"Our Courses",link:"/our-courses/national-defence-academy-nda"},
+        {id:5,name:"Gallery",link:"/gallery"},
     ]
     return (
         <>
@@ -28,10 +28,10 @@ export default function MainHeader() {
                         </div>
                     </div>
                 </div>
-                <nav className={'navbar navbar-expand-lg navbar-light bg-light-subtle shadow-sm py-lg-0'}>
+                <nav className={'navbar navbar-expand-lg navbar-light bg-light-subtle shadow-sm py-0 py-lg-0'}>
                     <div className="container">
                         <Link href={'/'} className={'navbar-brand me-0'}>
-                            <Image src={'/logo.png'} alt={'logo'} width={100} height={70.8} sizes={'100vw'}
+                            <Image src={'/logo.png'} alt={'logo'} width={80} height={56.63} sizes={'100vw'}
                                    className={'img-fluid d-lg-none'} priority={true} />
                             <Image src={'/logo.png'} alt={'logo'} width={132} height={94} sizes={'100vw'}
                                    className={'img-fluid d-none d-lg-block'} priority={true} />

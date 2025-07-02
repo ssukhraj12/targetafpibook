@@ -7,7 +7,7 @@ export default function BlogGrid() {
     ];
     return (
         <>
-            <section id={'blog-grid'} className={'py-3 bg-light-subtle position-relative'}>
+            <section id={'blog-grid'} className={'pt-3 pb-5 bg-light position-relative'}>
                 <div className="container">
                     <div className="row align-items-end gy-3">
                         <div className="col-lg-9">
@@ -26,7 +26,7 @@ export default function BlogGrid() {
                     </div>
                     <div className="row mt-2 gy-4">
                         {hblogs.map((blog, index) => (
-                            <div key={index} className={'col-lg-4'}>
+                            <div key={index} className={'col-lg-4'} data-aos={'fade-down'}>
                                 <div className="card shadow-lg" title={blog.title}>
                                     <Image src={blog.blog_image} alt={blog.title} height={'280'} width={'420'} quality={70}
                                            className={'card-img-top'} style={{width:'100%',aspectRatio:'42/28',objectFit:'fill',height:'auto'}} />
