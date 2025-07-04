@@ -1,7 +1,7 @@
 export default function CallbackForm() {
     return (
         <>
-            <div className="card shadow bshadow1 border-0 rounded-3" data-aos={'fade-up-right'} data-aos-delay={300}>
+            <div className="card shadow bshadow1 border-0 rounded-3">
                 <div className="card-body p-5">
                     <h2 className={'fw-bold cred lh-1 mb-1'}>Request a Callback</h2>
                     <p className={'pb-1 mb-4'}>Enter your details in the form and we will call you back.</p>

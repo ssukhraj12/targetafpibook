@@ -26,7 +26,7 @@ export default function BlogGrid() {
                     </div>
                     <div className="row mt-2 gy-4">
                         {hblogs.map((blog, index) => (
-                            <div key={index} className={'col-lg-4'} data-aos={'fade-down'}>
+                            <div key={index} className={'col-lg-4'}>
                                 <div className="card shadow-lg" title={blog.title}>
                                     <Image src={blog.blog_image} alt={blog.title} height={'280'} width={'420'} quality={70}
                                            className={'card-img-top'} style={{width:'100%',aspectRatio:'42/28',objectFit:'fill',height:'auto'}} />

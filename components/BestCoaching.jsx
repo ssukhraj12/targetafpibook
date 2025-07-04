@@ -5,7 +5,7 @@ export default function BestCoaching() {
         <>
             <section id={'bestcoaching'} className={'py-3'}>
                 <div className="container">
-                    <div className="row align-items-center g-5" data-aos={'fade-up-right'}>
+                    <div className="row align-items-center g-5">
                         <div className="col-lg-6 offset-lg-1 order-0 order-lg-1">
                             <h2 className={'h6 cred fw-semibold'}>
                                 <span className={'text-decoration-underline cred d-inline-flex bgred me-2'}
@@ -17,7 +17,7 @@ export default function BestCoaching() {
                             </p>
                             <a href="#" className={'fw-bold text-decoration-none rounded-1 text-uppercase bgred text-white px-5 py-3'}>Read More</a>
                         </div>
-                        <div className="col-lg-5 order-1 order-lg-0" data-aos={'fade-up-left'}>
+                        <div className="col-lg-5 order-1 order-lg-0">
                             <Image src={'/images/targetafpi_book_3.png'} quality={70} alt={'Target AFPI Book'} width={707} height={1000}
                                    className="img-fluid" />
                         </div>

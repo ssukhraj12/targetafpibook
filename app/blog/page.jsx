@@ -33,7 +33,7 @@ export default function BlogsPage(){
                         <div className="col-12 col-lg-8">
                             <div className="row gy-5">
                                 {hblogs.map((blog, index) => (
-                                    <div key={index} className={'col-lg-12'} data-aos={'fade-down'}>
+                                    <div key={index} className={'col-lg-12'}>
                                         <div className="card shadow" title={blog.title}>
                                             <Image src={blog.blog_image} alt={blog.title} height={'280'} width={'420'} quality={70}
                                                    className={'card-img-top'} style={{width:'100%',aspectRatio:'41/23',objectFit:'fill',height:'auto'}} />

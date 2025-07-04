@@ -27,7 +27,7 @@ export default function CallSection() {
                         <div className={'col-lg-6 pe-lg-4 mb-5 mb-lg-0'}>
                             <CallbackForm/>
                         </div>
-                        <div className={'col-lg-6 pb-lg-5'} data-aos={'fade-down'} data-aos-delay={300}>
+                        <div className={'col-lg-6 pb-lg-5'}>
                             <ul className="list list-unstyled mb-0">
                                 <li className="mb-4 mb-lg-2">
                                     <span className="d-flex align-items-center justify-content-end justify-content-lg-end flex-column flex-xl-row fw-medium fs-5">
@@ -50,8 +50,7 @@ export default function CallSection() {
                     </div>
                     <div className="row g-4 text-center">
                         {facts.map((fact, index) => (
-                            <div key={index} className={'col-6 col-xl-3 d-flex flex-column flex-xl-row align-items-center justify-content-center'}
-                                 data-aos={'fade-down-right'}>
+                            <div key={index} className={'col-6 col-xl-3 d-flex flex-column flex-xl-row align-items-center justify-content-center'}>
                                 <Icon icon={`${fact.icon}`} className={'fs-1 me-2'}/>
                                 <h3 className={'h6 fw-bold mb-0 ps-1 ms-xl-2 mt-3 mt-xl-0'}>{fact.title}</h3>
                             </div>
