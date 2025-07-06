@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Technical Entry Scheme (TES, 10+2) | Target AFPI Book",
+    title: "Technical Entry Scheme (TES, 10+2)",
 }
 export default function TesPage(){
     return (

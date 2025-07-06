@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "About Mission and Vision | Target AFPI Book",
+    title: "About Mission and Vision",
 }
 export default function MissionAndVisionPage(){
     return(

@@ -1,15 +1,19 @@
 import Image from "next/image";
+import { cookies } from "next/headers";
 import CallbackForm from "@/components/CallbackForm";
-
-export const metadata = {
-    title: 'Blog | Target AFPI Book',
-    description:'Blog | Target AFPI Book',
-    siteTitle: 'Target AFPI Books',
-    alternates:{
-        canonical:'/blog'
-    }
+export async function getData() {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/public/blogs`, {
+        next: { revalidate: 60 } // revalidate every 60s
+    });
+    return res.json();
 }
-export default function BlogsPage(){
+export const metadata = {
+    title: 'Our Blog',
+    description:'Blog | Target AFPI Book',
+}
+export default async function BlogsPage(){
+    const data = await getData();
+    const blogs = data.blogs || [];
     const hblogs = [
         {blog_id:1,blog_image:'/images/blog_1.png',title:'Our Selection Excellence At Maharaja Ranjit Singh Academy, Mohali'},
         {blog_id:2,blog_image:'/images/blog_2.png',title:'Shaurya Batch'},
@@ -31,6 +35,24 @@ export default function BlogsPage(){
                 <div className="container pt-4 mt-4">
                     <div className="row gy-4">
                         <div className="col-12 col-lg-8">
+                            <div className="row gy-5">
+                                {blogs.map(blog => (
+                                    <div className="col-lg-12" key={blog._id}>
+                                        <div className="card shadow" title={blog.title}>
+                                            <div className="card-body">
+                                                <div className={'small mb-2 text-muted'}>
+                                                    <span>24th May, 2025</span>
+                                                    <span className={'ms-3'}>By: Prabhjot Sir</span>
+                                                </div>
+                                                <h2 className={'h5 text-truncate fw-bold'}>{blog.title}</h2>
+                                                <p>{blog.short_content || blog.blog_content?.slice(0, 150)}</p>
+                                                <a href="#" className={'cred fw-semibold text-uppercase text-decoration-none small'}
+                                                   title={blog.title}>Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                             <div className="row gy-5">
                                 {hblogs.map((blog, index) => (
                                     <div key={index} className={'col-lg-12'}>

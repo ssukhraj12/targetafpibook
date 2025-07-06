@@ -5,7 +5,8 @@ import BestCoaching from "@/components/BestCoaching";
 import BlogGrid from "@/components/BlogGrid";
 import HappyClients from "@/components/HappyClients";
 
-export default function Home() {
+
+export default async function Home() {
   return (
       <>
           <CallSection/>

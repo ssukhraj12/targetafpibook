@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Maharana Ranjit Singh Academy | Target AFPI Book",
+    title: "Maharana Ranjit Singh Academy",
 }
 export default function MRSAPage(){
     return (

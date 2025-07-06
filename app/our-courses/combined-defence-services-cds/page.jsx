@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Combined Defence Services CDS | Target AFPI Book",
+    title: "Combined Defence Services CDS",
 }
 export default function CDSPage(){
     return (

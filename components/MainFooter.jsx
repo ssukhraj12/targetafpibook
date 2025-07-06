@@ -54,9 +54,9 @@ export default function MainFooter() {
                             <ul className={'nav flex-column'}>
                                 <li className={'nav-item'}><Link href="/blog" className={'nav-link'}>Blog</Link></li>
                                 <li className={'nav-item'}><Link href="/gallery" className={'nav-link'}>Gallery</Link></li>
-                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Testimonials</a></li>
-                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Privacy Policy</a></li>
-                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Terms & Conditions</a></li>
+                                <li className={'nav-item'}><Link href="/testimonials" className={'nav-link'}>Testimonials</Link></li>
+                                <li className={'nav-item'}><Link href="/privacy-policy" className={'nav-link'}>Privacy Policy</Link></li>
+                                <li className={'nav-item'}><Link href="/terms-conditions" className={'nav-link'}>Terms & Conditions</Link></li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
@@ -65,7 +65,7 @@ export default function MainFooter() {
                                 <li className={'nav-item'}><Link href="/about" className={'nav-link'}>About us</Link></li>
                                 <li className={'nav-item'}><Link href="/contact" className={'nav-link'}>Contact Us</Link></li>
                                 <li className={'nav-item'}><Link href="/our-courses" className={'nav-link'}>Our Courses</Link></li>
-                                <li className={'nav-item'}><a href="#" className={'nav-link'}>Buy Book</a></li>
+                                <li className={'nav-item'}><Link href="/online-store" className={'nav-link'}>Online Store</Link></li>
                             </ul>
                         </div>
                         <div className="col-6 col-md-4 col-lg-2">

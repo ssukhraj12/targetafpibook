@@ -1,3 +1,6 @@
+export const metadata = {
+    title: "Our Courses",
+}
 export default function OurCoursesPage(){
     return (
         <>

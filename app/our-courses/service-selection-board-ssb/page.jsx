@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Service Selection Board (SSB) | Target AFPI Book",
+    title: "Service Selection Board (SSB)",
 }
 export default function SsbPage(){
     return (

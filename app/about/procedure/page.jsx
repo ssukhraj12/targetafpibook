@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "About Procedure | Target AFPI Book",
+    title: "About Procedure",
 }
 export default function ProcedurePage() {
     return (

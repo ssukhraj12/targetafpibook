@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "About Prospectus | Target AFPI Book",
+    title: "About Prospectus",
 }
 export default function ProspectusPage() {
     return (

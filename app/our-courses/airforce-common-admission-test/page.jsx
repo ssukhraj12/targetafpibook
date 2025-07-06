@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Airforce Common Admission Test | Target AFPI Book",
+    title: "Airforce Common Admission Test",
 }
 export default function ACATPage(){
     return (

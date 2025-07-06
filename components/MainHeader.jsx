@@ -11,6 +11,7 @@ export default function MainHeader() {
         {id:2,name:"About",link:"/about"},
         {id:4,name:"Our Courses",link:"/our-courses/national-defence-academy-nda"},
         {id:5,name:"Gallery",link:"/gallery"},
+        {id:6,name:"Blog",link:"/blog"},
     ]
     return (
         <>

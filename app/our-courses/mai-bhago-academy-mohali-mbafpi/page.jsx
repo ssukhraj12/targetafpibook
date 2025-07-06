@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Mai Bhago Academy Mohali MBAFPI | Target AFPI Book",
+    title: "Mai Bhago Academy Mohali MBAFPI",
 }
 export default function MBAPage(){
     return (

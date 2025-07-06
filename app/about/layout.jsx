@@ -1,7 +1,4 @@
 import Link from "next/link";
-export const metadata = {
-    title: "About | Target AFPI Book",
-}
 export default function AboutLayout({children}) {
     return (
         <>

@@ -1,4 +1,10 @@
 import ContactForm2 from "@/components/ContactForm2";
+export async function generateMetadata(){
+    const title = 'Contact Us';
+    return {
+        title:title,
+    }
+}
 
 export default function ContactPage(){
     return (

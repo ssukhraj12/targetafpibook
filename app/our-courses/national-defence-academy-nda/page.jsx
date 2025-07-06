@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "National Defence Academy NDA | Target AFPI Book",
+    title: "National Defence Academy NDA",
 }
 export default function NDAPage(){
     return (
