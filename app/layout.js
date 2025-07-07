@@ -42,6 +42,10 @@ export async function generateMetadata(){
         description: stripHtmlAndLimit(description),
         authors: [{ name: "Prabhjot Sir" }],
         applicationName: siteName,
+        robots: {
+            index: true,
+            follow: true,
+        },
         icons: [
             { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
             { rel: "icon", url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
