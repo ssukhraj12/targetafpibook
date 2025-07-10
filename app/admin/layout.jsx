@@ -27,7 +27,7 @@ export default function AdminLayout({ children }) {
                 <div className={'d-flex'}>
                     {!isLoginPage && (<AdminSidebar/>)}
                     {/* Main Content */}
-                    <div className="flex-grow-1 p-4">
+                    <div className="flex-grow-1 p-4 bg-light vh-100 overflow-y-auto">
                         {children}
                     </div>
                 </div>
