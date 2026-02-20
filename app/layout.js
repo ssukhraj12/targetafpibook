@@ -3,10 +3,9 @@ import "./globals.css";
 import MainHeader from "@/components/MainHeader";
 import Script from "next/script";
 import MainFooter from "@/components/MainFooter";
-import {mediaUrl, siteUrl} from "@/lib/config";
+import {mediaUrl, publicName, siteUrl} from "@/lib/config";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import {fetchWebsite} from "@/lib/api/admin";
-import {headers} from "next/headers";
 import {getDynamicCanonical} from "@/lib/seo";
 
 const poppins = Poppins({
@@ -31,7 +30,8 @@ function stripHtmlAndLimit(html, limit = 160) {
 }
 export async function generateMetadata(){
     const wmeta = await fetchWebsite();
-    const siteName = wmeta?.site_name || "Target AFPI Book";
+    const canonical = await getDynamicCanonical();
+    const siteName = wmeta?.site_name || publicName;
     const defaultTitle = wmeta?.site_title + ` - ` +  siteName || 'Target AFPI Book for Maharaja Ranjit Singh Academy Entrance Exam';
     const description = wmeta?.site_description + ` ` + siteName || 'Mohali Defence Academy boasts a team of highly experienced professionals. Team is dedicated to providing result-oriented courses for aspirants';
     return {
@@ -62,13 +62,13 @@ export async function generateMetadata(){
             { rel: "icon", url: "/android-icon-192x192.png", sizes: "192x192", type: "image/png" },
         ],
         alternates:{
-            canonical: getDynamicCanonical(),
+            canonical: canonical,
         },
         openGraph:{
             title:defaultTitle,
             type:'website',
-            siteName: siteName,
-            url:getDynamicCanonical(),
+            siteName: publicName,
+            url:canonical,
             images:[{
                 url: `${mediaUrl}targetafpi_book_1.png`,
                 secureUrl: `${mediaUrl}targetafpi_book_1.png`,
@@ -88,7 +88,7 @@ export default async function RootLayout({ children }) {
             __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                name: wmeta.site_name,
+                name: publicName,
                 url: wmeta.site_url,
                 logo:`${mediaUrl}mdalogo.png`,
                 description: wmeta.site_description,
